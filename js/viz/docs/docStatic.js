@@ -119,6 +119,15 @@ var staticMethods = {
     getMarkup: function() { },
     /**
     * @name vizmethods.currentPalette
+    * @publicName currentPalette()
+    * @return string
+    * @static
+    * @module viz/palette
+    * @export currentPalette
+    */
+    currentPalette: function() { },
+    /**
+    * @name vizmethods.currentPalette
     * @publicName currentPalette(paletteName)
     * @param1 paletteName:string
     * @static
@@ -129,7 +138,11 @@ var staticMethods = {
     /**
     * @name vizmethods.getPalette
     * @publicName getPalette(paletteName)
-    * @param1 paletteName:string
+    * @param1 palette:string
+    * @param2 parameters:object
+    * @param2_field1 count:number
+    * @param2_field2 keepLastColorInEnd:boolean
+    * @param2_field3 type:string
     * @return object
     * @static
     * @module viz/palette
